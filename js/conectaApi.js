@@ -1,7 +1,7 @@
 // função assíncrona para que o fetch da API ocorra antes das outras linhas de código serem executadas.
 async function listaVideos() {
     // através de fetch, recebemos os valores presentes na API do json.server.
-    const conexao = await fetch('http://localhost:3000/videos');
+    const conexao = await fetch('https://json-server-self-two.vercel.app/videos');
     // transforma os dados obtidos da API em formato .json, aguardando até que a formatação seja concluída.
     const conexaoConvertida = await conexao.json();
     // finaliza a function e retorna a lista em conexao.json quando a function for chamada. 
@@ -11,7 +11,7 @@ async function listaVideos() {
 // função assíncrona responsável por enviar os vídeos criados para a API. Os parâmetros serão as informações cadastradas na tela de envio do vídeo.  
 async function criaVideo(titulo, descricao, url, imagem) {
     // através de fetch acessamos os objetos presentes na API.
-    const conexao = await fetch('http://localhost:3000/videos', {
+    const conexao = await fetch('https://json-server-self-two.vercel.app/videos', {
         // com method: "POST" especificamos que o método a ser utilizado será o POST, em que estaremos enviando dados a API, ao invés de receber.
         method: "POST",
         // especifica que o arquivo a ser enviado é do tipo json.
@@ -42,7 +42,7 @@ async function criaVideo(titulo, descricao, url, imagem) {
 async function buscaVideo(termoDeBusca) {
     // através de fetch, acessamos as informações da API, buscando por vídeos que possuem determinado termoDeBusca procurado. 
     // ?q= --> a expressão pergunta à API se há algum vídeo com o termoDeBusca especificado, buscando dentro de todo o db.json. Se houver, retorna os itens que correspondem à busca. 
-    const conexao = await fetch(`http://localhost:3000/videos?q=${termoDeBusca}`);
+    const conexao = await fetch(`https://json-server-self-two.vercel.app/videos?q=${termoDeBusca}`);
     // formata o arquivo em bytes da API em formato .json.
     const conexaoConvertida = await conexao.json();
     // finaliza a function e retorna a lista atualizada com os resultados da busca quando for chamada. 
