@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+    <title>Youtube Remake</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="website" class="website">
+
+    <!-- Cabecalho -->
+    <header>
+        
+        <nav class="cabecalho">
+            <a href="../index.html"><i id="logo-btn" class="fa-brands fa-youtube"></i></a>
+            <div class="cabecalho__icones">
+                <i id="mode__icon" class="fa-solid fa-moon"></i>
+                <a class="cabecalho__videos" href="#"><i id="video-btn" class="fa-solid fa-video"></i></a>
+            </div>
+        </nav>
+
+    </header>
+    <i id="return-btn" class="fa-solid fa-arrow-turn-down-left"></i>
+    <main class="container">
+
+        <form class="container__formulario" data-formulario>
+            <h2 class="formulario__titulo">Envie um vídeo!</h3>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="url">Link do vídeo em formato watch ou embed</label>
+                    <input name="url" class="campo__escrita" required
+                        placeholder="Por exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" id='url' data-url />
+                </div>
+
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="titulo">Titulo do vídeo</label>
+                    <input name="titulo" class="campo__escrita" required placeholder="Neste campo, dê o nome do vídeo"
+                        id='titulo' data-titulo/>
+                </div>
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="imagem">Imagem de perfil</label>
+                    <input name="imagem" class="campo__escrita" required placeholder="Insira a url da imagem"
+                        id='imagem' data-imagem />
+                </div>
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="imagem">Visualizações do vídeo</label>
+                    <input name="imagem" class="campo__escrita" required placeholder="Insira a contagem de visualizações"
+                        id='descricao' data-descricao="" />
+                </div>
+
+                <input class="formulario__botao" type="submit" />
+        </form>
+
+    </main>
+    <script src="../js/darkMode.js" type="module"></script>
+    <script src="../js/criarVideo.js" type="module"></script>
+</body>
+
+</html>

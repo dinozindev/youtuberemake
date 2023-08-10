@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <title>Youtube Remake</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="website" class="website">
+    <header>
+
+        <nav class="cabecalho">
+            <a href="./index.html"><i id="logo-btn" class="fa-brands fa-youtube"></i></a>
+            <div class="cabecalho__pesquisar">
+                <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input" data-pesquisa="">
+                <button class="pesquisar__botao" data-botao-pesquisa>
+            </div>
+            <div class="cabecalho__icones">
+                <i id="mode__icon" class="fa-solid fa-moon"></i>
+                <a href="./pages/enviar-video.html" class="cabecalho__videos"><i id="video-btn"class="fa-solid fa-video"></i></a>
+            </div>
+        </nav>
+
+
+    <ul class="videos__container" alt="videos alura" data-lista>
+    </ul>   
+    <script src="js/darkMode.js" type="module"></script>
+    <script src="js/mostraVideos.js" type="module"></script>
+    <script src="./js/buscarVideo.js" type="module"></script>
+</section>
+</body>
+
+</html>
